@@ -1,12 +1,9 @@
 {
-  "name": "gatsby-starter-woo",
-  "version": "1.0.0",
-  "private": true,
-  "description": "gatsby-starter-woo",
+  "name": "gatsby-starter-shadcn",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "A simplified tech-blog starter for Gatsby",
   "author": "woo3145",
-  "keywords": [
-    "gatsby"
-  ],
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
@@ -37,5 +34,18 @@
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "typescript": "^5.1.6"
-  }
+  },
+  "homepage": "https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/woo3145/gatsby-starter-shadcn"
+  },
+  "bugs": {
+    "url": "https://github.com/woo3145/gatsby-starter-shadcn/issues"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-starter",
+    "gatsby-theme"
+  ]
 }

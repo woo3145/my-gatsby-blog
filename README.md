@@ -1,10 +1,10 @@
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+    <img alt="Gatsby" src="./_github/icon.png" width="160" style="border-radius: 50%; " />
   </a>
 </p>
 <h1 align="center">
-  Gatsby Minimal TypeScript Starter
+  gatsby-starter-cat-bread
 </h1>
 
 ## 🚀 Quick start
@@ -14,8 +14,8 @@
     Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
 
     ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
+    # create a new Gatsby site using the gatsby-starter-shadcn starter
+    npx gatsby new your-project-name https://github.com/woo3145/gatsby-starter-cat-bread
     ```
 
 2.  **Start developing.**
@@ -23,7 +23,7 @@
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-gatsby-site/
+    cd your-project-name
     npm run develop
     ```
 
@@ -35,15 +35,10 @@
 
 4.  **Learn more**
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+    - [Documentation](https://github.com/woo3145/gatsby-starter-cat-bread)
 
 ## 🚀 Quick start (Netlify)
 
 Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/woo3145/gatsby-starter-cat-bread)
