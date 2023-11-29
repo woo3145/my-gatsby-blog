@@ -1,28 +1,55 @@
 import type { GatsbyConfig } from 'gatsby';
+import blogConfig from './blog-config';
+
+const { siteMetadata, manifestSettings } = blogConfig;
 
 const config: GatsbyConfig = {
-  siteMetadata: {
-    title: `gatsby-starter-cat-bread`,
-    siteUrl: `https://www.yourdomain.tld`,
-  },
-  // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
-  // If you use VSCode you can also use the GraphQL plugin
-  // Learn more at: https://gatsby.dev/graphql-typegen
+  siteMetadata: siteMetadata.siteUrl ? { siteUrl: siteMetadata.siteUrl } : {},
   graphqlTypegen: true,
   plugins: [
     'gatsby-plugin-postcss',
-    // 'gatsby-plugin-google-gtag',
     'gatsby-plugin-image',
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          quality: 100,
+          placeholder: 'blurred',
+        },
+      },
+    },
     'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/images/icon.png',
+        name: manifestSettings.siteName,
+        short_name: manifestSettings.shortName,
+        start_url: manifestSettings.startUrl,
+        background_color: manifestSettings.backgroundColor,
+        theme_color: manifestSettings.themeColor,
+        display: manifestSettings.display,
+        icon: manifestSettings.favicon,
       },
     },
-    'gatsby-transformer-remark',
-    'gatsby-plugin-sharp',
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        footnotes: true,
+        gfm: true,
+        plugins: [],
+        jsFrontmatterEngine: false,
+      },
+    },
+
     'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'contents',
+        path: './contents/',
+      },
+      __key: 'contents',
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -39,6 +66,8 @@ const config: GatsbyConfig = {
       },
       __key: 'pages',
     },
+
+    // 'gatsby-plugin-google-gtag',
   ],
 };
 
