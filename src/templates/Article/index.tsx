@@ -14,7 +14,6 @@ export default function ArticleTemplate({
   pageContext: { article, listingPagePath, entityName },
 }: ArticleTemplateProps): React.ReactElement {
   const { frontmatter } = article;
-  console.log(frontmatter);
   return (
     <div>
       <div>Article</div>

@@ -3,3 +3,9 @@ interface AllSettingsQueryResult<T> {
     nodes: T[];
   };
 }
+
+interface AllHeroQueryResult<T> {
+  allHeroJson: {
+    nodes: T[];
+  };
+}

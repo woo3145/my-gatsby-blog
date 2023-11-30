@@ -1,5 +1,4 @@
 import { graphql, useStaticQuery } from 'gatsby';
-import { IGatsbyImageData } from 'gatsby-plugin-image';
 
 interface SiteConfiguration {
   featureToggles: {

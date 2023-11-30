@@ -1,0 +1,24 @@
+{
+  "HeroSection": {
+    "intro": "Hello",
+    "heroPhoto": {
+      "src": "../../images/profile.png",
+      "alt": "My Photo"
+    },
+    "image": {
+      "src": "../../images/waving-hand.png",
+      "alt": "Waving Hand Emoji"
+    },
+    "title": "I'm a Gatsby Starter",
+    "subtitle": {
+      "prefix": "I make tech blog ",
+      "highlight": "awesome",
+      "suffix": "."
+    },
+    "description": "A modern blog with a minimalistic design.",
+    "socialProfiles": {
+      "from": ["Github", "Mail"],
+      "showIcons": false
+    }
+  }
+}

@@ -13,7 +13,9 @@ export const Nav = ({ navItems }: NavProps) => {
   return (
     <nav className="text-lg font-semibold space-x-4">
       {navItems.map((navItem) => {
-        return <NavItem src={navItem.url} text={navItem.label} />;
+        return (
+          <NavItem key={navItem.label} src={navItem.url} text={navItem.label} />
+        );
       })}
     </nav>
   );

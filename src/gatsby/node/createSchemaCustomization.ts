@@ -41,6 +41,31 @@ const createSchemaCustomization: GatsbyNode['createSchemaCustomization'] = ({
       social: Social
     }
 
+    type Image {
+      src: File @fileByRelativePath
+      alt: String
+    }
+
+    type HeroSubTitle {
+      prefix: String
+      highlight: String
+      suffix: String
+    }
+
+    type HeroSocialProfiles {
+      from: [String]
+      showIcons: Boolean
+    }
+
+    type HeroSection {
+      intro: String
+      heroPhoto: Image
+      image: Image
+      title: String
+      subtitle: HeroSubTitle
+      description: String
+      socialProfiles: HeroSocialProfiles
+    }
   `;
 
   createTypes(typeDefs);
