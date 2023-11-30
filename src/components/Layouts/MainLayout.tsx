@@ -5,7 +5,9 @@ export const MainLayout = ({ children }: { children: ReactNode }) => {
   return (
     <div>
       <Header />
-      <main className="w-full max-w-screen-xl mx-auto">{children}</main>
+      <main className="w-full max-w-screen-xl min-h-full mx-auto">
+        {children}
+      </main>
     </div>
   );
 };

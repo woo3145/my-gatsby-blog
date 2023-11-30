@@ -5,8 +5,18 @@ const createSchemaCustomization: GatsbyNode['createSchemaCustomization'] = ({
 }) => {
   const { createTypes } = actions;
   const typeDefs = `
+    type ArticleReadingTime {
+      text: String
+    }
+
+    type MarkdownRemarkFields {
+      slug: String
+      readingTime: ArticleReadingTime
+    }
+
     type MarkdownRemark implements Node {
       frontmatter: Frontmatter
+      fields: MarkdownRemarkFields
     }
     type BannerImage {
       src: File @fileByRelativePath

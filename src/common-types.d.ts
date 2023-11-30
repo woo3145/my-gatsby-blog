@@ -9,3 +9,9 @@ interface AllHeroQueryResult<T> {
     nodes: T[];
   };
 }
+
+interface AllMarkDownRemarkQueryResult<T> {
+  allMarkdownRemark: {
+    nodes: T[];
+  };
+}
