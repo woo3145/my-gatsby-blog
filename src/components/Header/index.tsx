@@ -11,9 +11,9 @@ export const Header = () => {
   const siteConfiguration = useSiteConfiguration();
 
   return (
-    <header className="w-full py-3">
+    <header className="w-full py-3 bg-background">
       <div className="max-w-screen-xl px-4 mx-auto flex items-center justify-between">
-        <Logo avatar={siteMetadata.avatar} text={siteMetadata.title} />
+        <Logo avatar={siteMetadata.avatar} text={siteConfiguration.logo.text} />
         <Nav navItems={siteConfiguration.navigation.header} />
       </div>
     </header>
@@ -22,6 +22,7 @@ export const Header = () => {
 
 const Logo = ({
   avatar,
+  text,
 }: {
   avatar?: { childImageSharp?: { gatsbyImageData?: IGatsbyImageData } };
   text: string;
@@ -39,7 +40,7 @@ const Logo = ({
         to="/"
         className="text-primary hover:text-primary/80 transition-colors duration-300"
       >
-        bread
+        {text}
       </Link>
     </div>
   );

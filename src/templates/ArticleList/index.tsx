@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArticleData } from '../Article/type';
-import { MainLayout } from '@/components/Layouts/MainLayout';
 
 interface ArticleListingTemplateProps {
   pageContext: {
@@ -15,9 +14,9 @@ export default function ArticleListingTemplate({
   const entities = entityName ?? 'Articles';
 
   return (
-    <MainLayout>
+    <>
       <div>{entities}</div>
       <div>{articles.length}</div>
-    </MainLayout>
+    </>
   );
 }
