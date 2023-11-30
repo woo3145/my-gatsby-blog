@@ -4,15 +4,17 @@ import { Link } from 'gatsby';
 import { useSiteMetadata } from '@/hooks/useSiteMetadata';
 import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import { Nav } from '../Nav';
+import { useSiteConfiguration } from '@/hooks/useSiteConfiguration';
 
 export const Header = () => {
   const siteMetadata = useSiteMetadata();
+  const siteConfiguration = useSiteConfiguration();
 
   return (
     <header className="w-full py-3">
       <div className="max-w-screen-xl px-4 mx-auto flex items-center justify-between">
         <Logo avatar={siteMetadata.avatar} text={siteMetadata.title} />
-        <Nav />
+        <Nav navItems={siteConfiguration.navigation.header} />
       </div>
     </header>
   );
