@@ -1,10 +1,10 @@
 import type { GatsbyConfig } from 'gatsby';
 import blogConfig from './blog-config';
 
-const { siteMetadata, manifestSettings } = blogConfig;
+const { siteUrl, manifestSettings } = blogConfig;
 
 const config: GatsbyConfig = {
-  siteMetadata: siteMetadata.siteUrl ? { siteUrl: siteMetadata.siteUrl } : {},
+  siteMetadata: siteUrl ? { siteUrl: siteUrl } : {},
   graphqlTypegen: true,
   plugins: [
     'gatsby-plugin-postcss',
@@ -42,6 +42,7 @@ const config: GatsbyConfig = {
     },
 
     'gatsby-transformer-sharp',
+    'gatsby-transformer-json',
     {
       resolve: 'gatsby-source-filesystem',
       options: {

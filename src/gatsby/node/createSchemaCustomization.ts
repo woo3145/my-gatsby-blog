@@ -23,6 +23,24 @@ const createSchemaCustomization: GatsbyNode['createSchemaCustomization'] = ({
       categories: [String]
       keywords: [String]
     }
+
+    type Social {
+      github: String
+      mail: String
+    }
+
+    type SiteMetadata {
+      language: String
+      siteUrl: String
+      title: String
+      titleTemplate: String
+      description: String
+      author: String
+      avatar: File @fileByRelativePath
+      bio: String
+      social: Social
+    }
+
   `;
 
   createTypes(typeDefs);
