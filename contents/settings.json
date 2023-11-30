@@ -14,7 +14,7 @@
     }
   },
   "siteConfiguration": {
-    "logo": { "text": "" },
+    "logo": { "text": "Cheeze" },
     "navigation": {
       "header": [
         { "label": "Home", "url": "/" },

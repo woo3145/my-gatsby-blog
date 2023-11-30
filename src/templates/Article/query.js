@@ -22,7 +22,7 @@ module.exports = {
             caption
             src {
               childImageSharp {
-                gatsbyImageData(width: 660, placeholder: BLURRED)
+                gatsbyImageData(width: 768, placeholder: BLURRED)
               }
             }
           }
