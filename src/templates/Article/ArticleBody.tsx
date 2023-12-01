@@ -5,5 +5,7 @@ interface Props {
 }
 
 export const ArticleBody = ({ html }: Props) => {
-  return <div className="" dangerouslySetInnerHTML={{ __html: html }} />;
+  return (
+    <div className="blog_markdown" dangerouslySetInnerHTML={{ __html: html }} />
+  );
 };

@@ -5,6 +5,8 @@ import { Link } from 'gatsby';
 import { Badge } from '@/components/ui/badge';
 import { ChevronLeftIcon } from '@radix-ui/react-icons';
 import { ArticleBody } from './ArticleBody';
+import { useSiteMetadata } from '@/hooks/useSiteMetadata';
+import { Seo } from '@/components/Seo';
 
 interface ArticleTemplateProps {
   pageContext: {
@@ -18,8 +20,15 @@ export default function ArticleTemplate({
   pageContext: { article, listingPagePath, entityName },
 }: ArticleTemplateProps): React.ReactElement {
   const { frontmatter, fields } = article;
+  const meta = useSiteMetadata();
+
   return (
     <article className="max-w-screen-md mx-auto py-8">
+      <Seo
+        title={article.frontmatter.title}
+        description={article.frontmatter.description || undefined}
+        useTitleTemplate={true}
+      />
       <Link to="/posts">
         <Badge variant="secondary">
           <ChevronLeftIcon />
@@ -40,7 +49,9 @@ export default function ArticleTemplate({
           className="aspect-video w-full rounded-lg"
         />
       )}
-      <p>{frontmatter.title}</p>
+      <p className="text-accent-foreground/50 text-right">
+        {frontmatter.banner.caption}
+      </p>
       <ArticleBody html={article.html} />
     </article>
   );

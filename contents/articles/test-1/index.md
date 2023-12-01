@@ -3,9 +3,9 @@ title: 'This is an exemplary article for the blog.'
 description: 'This description will be used for the article listing and search results on Google.'
 date: '2023-11-29'
 banner:
-  src: '../../images/profile.png'
+  src: '../../images/thumbnails/4_thumbnail.png'
   alt: 'First Markdown Post'
-  caption: ''
+  caption: 'caption'
 categories:
   - 'Setup'
   - 'Tutorial'

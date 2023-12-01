@@ -2,19 +2,20 @@
   "siteMetadata": {
     "language": "en",
     "siteUrl": "",
-    "title": "bread",
+    "title": "Cheese blog",
     "titleTemplate": "%s · Blog",
     "description": "gatsby-blog-starter for tech blog.",
-    "author": "",
+    "author": "woo3145",
     "avatar": "./images/profile_icon.png",
+    "thumbnail": "./images/profile_icon.png",
     "bio": "",
     "social": {
-      "github": "",
+      "github": "https://github.com/woo3145",
       "mail": ""
     }
   },
   "siteConfiguration": {
-    "logo": { "text": "Cheeze" },
+    "logo": { "text": "Cheese blog" },
     "navigation": {
       "header": [
         { "label": "Home", "url": "/" },

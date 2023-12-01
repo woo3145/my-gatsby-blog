@@ -47,6 +47,7 @@ const createSchemaCustomization: GatsbyNode['createSchemaCustomization'] = ({
       description: String
       author: String
       avatar: File @fileByRelativePath
+      thumbnail: File @fileByRelativePath
       bio: String
       social: Social
     }

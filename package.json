@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-cat-bread",
+  "name": "gatsby-starter-cheese",
   "version": "0.1.0",
   "license": "MIT",
   "description": "A simplified tech-blog starter for Gatsby",
@@ -24,6 +24,7 @@
     "gatsby-plugin-image": "^3.12.3",
     "gatsby-plugin-manifest": "^5.12.3",
     "gatsby-plugin-postcss": "^6.12.0",
+    "gatsby-plugin-react-helmet": "^6.12.0",
     "gatsby-plugin-sharp": "^5.12.3",
     "gatsby-plugin-sitemap": "^6.12.3",
     "gatsby-remark-images": "^7.12.3",
@@ -36,6 +37,7 @@
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "reading-time": "^1.5.0",
     "slugify": "^1.6.6",
     "tailwind-merge": "^2.0.0",
@@ -46,15 +48,16 @@
     "@types/node": "^20.3.3",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
+    "@types/react-helmet": "^6.1.9",
     "typescript": "^5.1.6"
   },
-  "homepage": "https://github.com/woo3145/gatsby-starter-cat-bread#readme",
+  "homepage": "https://github.com/woo3145/gatsby-starter-cheese#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/woo3145/gatsby-starter-cat-bread"
+    "url": "https://github.com/woo3145/gatsby-starter-cheese"
   },
   "bugs": {
-    "url": "https://github.com/woo3145/gatsby-starter-cat-bread/issues"
+    "url": "https://github.com/woo3145/gatsby-starter-cheese/issues"
   },
   "keywords": [
     "gatsby",

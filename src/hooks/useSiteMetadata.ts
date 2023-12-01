@@ -9,6 +9,7 @@ interface SiteMetadata {
   description: string;
   author: string;
   avatar?: { childImageSharp?: { gatsbyImageData?: IGatsbyImageData } };
+  thumbnail: { childImageSharp: { original: { src: string } } };
   bio: string;
   social: {
     github: string;
@@ -33,6 +34,13 @@ export const siteMetadataQuery = graphql`
           avatar {
             childImageSharp {
               gatsbyImageData(height: 100, width: 100)
+            }
+          }
+          thumbnail {
+            childImageSharp {
+              original {
+                src
+              }
             }
           }
           bio

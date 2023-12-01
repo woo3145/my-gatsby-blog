@@ -6,9 +6,11 @@ const { siteUrl, manifestSettings } = blogConfig;
 const config: GatsbyConfig = {
   siteMetadata: siteUrl ? { siteUrl: siteUrl } : {},
   graphqlTypegen: true,
+
   plugins: [
     'gatsby-plugin-postcss',
     'gatsby-plugin-image',
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
