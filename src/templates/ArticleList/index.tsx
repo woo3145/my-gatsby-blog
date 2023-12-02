@@ -1,6 +1,8 @@
 import React from 'react';
 import { ArticleData } from '../Article/type';
 import { Seo } from '@/components/Seo';
+import { ArticleListHeader } from './Header';
+import { ArticleList } from './ArticleList';
 
 interface ArticleListingTemplateProps {
   pageContext: {
@@ -16,9 +18,9 @@ export default function ArticleListingTemplate({
   return (
     <>
       <Seo title={`All ${entities}`} useTitleTemplate={true} />
-      <div className="">
-        <div>{entities}</div>
-        <div>{articles.length}</div>
+      <div className="mx-auto w-full py-20 px-4">
+        <ArticleListHeader />
+        <ArticleList articles={articles} />
       </div>
     </>
   );
