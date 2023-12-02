@@ -16,8 +16,10 @@ export default function ArticleListingTemplate({
   return (
     <>
       <Seo title={`All ${entities}`} useTitleTemplate={true} />
-      <div>{entities}</div>
-      <div>{articles.length}</div>
+      <div className="">
+        <div>{entities}</div>
+        <div>{articles.length}</div>
+      </div>
     </>
   );
 }

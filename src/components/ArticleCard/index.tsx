@@ -34,8 +34,9 @@ export const ArticleCard = ({ article }: Props) => {
           <h2 className="text-base font-semibold truncate">
             {article.frontmatter.title}
           </h2>
-          <div className="text-xs text-accent-foreground">
+          <div className="flex text-xs text-accent-foreground">
             <span>{article.frontmatter.date}</span>
+            <span> - </span>
             <span>{article.fields.readingTime.text}</span>
           </div>
           <ul className="flex gap-2">

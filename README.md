@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  gatsby-starter-cat-bread
+  gatsby-starter-cheese
 </h1>
 
 ## 🚀 Quick start
@@ -14,8 +14,8 @@
     Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
 
     ```shell
-    # create a new Gatsby site using the gatsby-starter-shadcn starter
-    npx gatsby new your-project-name https://github.com/woo3145/gatsby-starter-cat-bread
+    # create a new Gatsby site using the gatsby-starter-cheese starter
+    npx gatsby new your-project-name https://github.com/woo3145/gatsby-starter-cheese
     ```
 
 2.  **Start developing.**
@@ -35,10 +35,10 @@
 
 4.  **Learn more**
 
-    - [Documentation](https://github.com/woo3145/gatsby-starter-cat-bread)
+    - [Documentation](https://github.com/woo3145/gatsby-starter-cheese)
 
 ## 🚀 Quick start (Netlify)
 
 Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/woo3145/gatsby-starter-cat-bread)
+[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/woo3145/gatsby-starter-cheese)
