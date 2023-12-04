@@ -1,6 +1,6 @@
 import type { GatsbyConfig } from 'gatsby';
 
-const blogConfig = require('./blog-config');
+const blogConfig = require('./blog-config.js');
 
 const { siteUrl, manifestSettings } = blogConfig;
 
@@ -23,7 +23,7 @@ const config: GatsbyConfig = {
         },
       },
     },
-    'gatsby-plugin-sitemap',
+    // 'gatsby-plugin-sitemap', // activate if your site is deployed
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -96,14 +96,6 @@ const config: GatsbyConfig = {
         path: './contents/',
       },
       __key: 'contents',
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: './src/images/',
-      },
-      __key: 'images',
     },
     {
       resolve: 'gatsby-source-filesystem',
