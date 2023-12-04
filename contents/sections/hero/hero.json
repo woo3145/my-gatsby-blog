@@ -1,6 +1,6 @@
 {
   "HeroSection": {
-    "intro": "Hello",
+    "intro": "안녕하세요",
     "heroPhoto": {
       "src": "../../images/profile.png",
       "alt": "My Photo"
@@ -9,13 +9,13 @@
       "src": "../../images/waving-hand.png",
       "alt": "Waving Hand Emoji"
     },
-    "title": "I'm a Gatsby Starter",
+    "title": "",
     "subtitle": {
-      "prefix": "I make tech blog ",
-      "highlight": "awesome",
-      "suffix": "."
+      "prefix": "",
+      "highlight": "Front-End",
+      "suffix": " 개발자 이창우 입니다."
     },
-    "description": "A modern blog with a minimalistic design.",
+    "description": "Front/Back 상관없이 js 생태계에 관심이 많습니다.",
     "socialProfiles": {
       "from": ["Github", "Mail"],
       "showIcons": false

@@ -3,8 +3,8 @@ module.exports = {
   // Used in manifest.json
   manifestSettings: {
     favicon: './contents/images/favicon.png', // Path is relative to the root
-    siteName: 'Blog Starter Cat Bread',
-    shortName: 'Cat Bread Starter',
+    siteName: 'Woo3145 blog',
+    shortName: 'Woo3145 blog',
     startUrl: '/',
     backgroundColor: '#FFFFFF',
     themeColor: '#000000',
