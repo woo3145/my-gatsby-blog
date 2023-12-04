@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: '',
+  siteUrl: 'localhost:8000', // Used for sitemap generation
   // Used in manifest.json
   manifestSettings: {
     favicon: './contents/images/favicon.png', // Path is relative to the root

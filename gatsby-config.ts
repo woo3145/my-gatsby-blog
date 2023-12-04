@@ -5,7 +5,9 @@ const blogConfig = require('./blog-config');
 const { siteUrl, manifestSettings } = blogConfig;
 
 const config: GatsbyConfig = {
-  siteMetadata: siteUrl ? { siteUrl: siteUrl } : {},
+  siteMetadata: {
+    siteUrl: siteUrl,
+  },
   graphqlTypegen: true,
 
   plugins: [
