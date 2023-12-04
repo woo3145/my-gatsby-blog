@@ -5,7 +5,6 @@ import { Link } from 'gatsby';
 import { Badge } from '@/components/ui/badge';
 import { ChevronLeftIcon } from '@radix-ui/react-icons';
 import { ArticleBody } from './ArticleBody';
-import { useSiteMetadata } from '@/hooks/useSiteMetadata';
 import { Seo } from '@/components/Seo';
 
 interface ArticleTemplateProps {
@@ -20,7 +19,6 @@ export default function ArticleTemplate({
   pageContext: { article, listingPagePath, entityName },
 }: ArticleTemplateProps): React.ReactElement {
   const { frontmatter, fields } = article;
-  const meta = useSiteMetadata();
 
   return (
     <article className="max-w-screen-md mx-auto py-8">

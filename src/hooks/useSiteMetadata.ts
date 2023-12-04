@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import { IGatsbyImageData } from 'gatsby-plugin-image';
 
-interface SiteMetadata {
+export interface SiteMetadata {
   language: string;
   siteUrl: string;
   title: string;
@@ -9,7 +9,7 @@ interface SiteMetadata {
   description: string;
   author: string;
   avatar?: { childImageSharp?: { gatsbyImageData?: IGatsbyImageData } };
-  thumbnail: { childImageSharp: { original: { src: string } } };
+  thumbnail?: { childImageSharp?: { original?: { src: string } } };
   bio: string;
   social: {
     github: string;

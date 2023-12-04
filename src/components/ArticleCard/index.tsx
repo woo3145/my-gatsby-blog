@@ -41,7 +41,7 @@ export const ArticleCard = ({ article }: Props) => {
           </div>
           <ul className="flex gap-2">
             {article.frontmatter.categories.map((cateogry) => {
-              return <Badge>{cateogry}</Badge>;
+              return <Badge key={cateogry}>{cateogry}</Badge>;
             })}
           </ul>
         </div>

@@ -3,10 +3,12 @@ import React from 'react';
 import { useLocation } from '@reach/router';
 import { Button } from '@/components/ui/button';
 import { Link } from 'gatsby';
+import { useAppStore } from '@/store/appStore';
 
 export const ArticleListHeader = () => {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
+  const categories = useAppStore((state) => state.categories);
 
   return (
     <div className="w-full">
@@ -16,25 +18,23 @@ export const ArticleListHeader = () => {
       </div>
 
       <div className="flex flex-wrap gap-4">
-        {['typescript', 'javascript', 'nest', 'react', 'next'].map(
-          (category) => {
-            return (
-              <Link
-                key={category}
-                to={`${location.pathname.slice(0, -1)}?filter=${category}`}
+        {categories.map((category) => {
+          return (
+            <Link
+              key={category}
+              to={`${location.pathname.slice(0, -1)}?filter=${category}`}
+            >
+              <Button
+                className="uppercase"
+                variant={
+                  category === params.get('filter') ? 'default' : 'outline'
+                }
               >
-                <Button
-                  className="uppercase"
-                  variant={
-                    category === params.get('filter') ? 'default' : 'outline'
-                  }
-                >
-                  {category}
-                </Button>
-              </Link>
-            );
-          }
-        )}
+                {category}
+              </Button>
+            </Link>
+          );
+        })}
       </div>
     </div>
   );

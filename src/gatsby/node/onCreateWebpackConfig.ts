@@ -12,6 +12,7 @@ const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = ({
         '@/hooks': path.resolve(__dirname, '../../hooks'),
         '@/sections': path.resolve(__dirname, '../../sections'),
         '@/templates': path.resolve(__dirname, '../../templates'),
+        '@/store': path.resolve(__dirname, '../../store'),
       },
     },
   });

@@ -1,5 +1,6 @@
 import type { GatsbyConfig } from 'gatsby';
-import blogConfig from './blog-config';
+
+const blogConfig = require('./blog-config');
 
 const { siteUrl, manifestSettings } = blogConfig;
 

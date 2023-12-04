@@ -1,14 +1,11 @@
 import React from 'react';
-import { Button } from '../ui/button';
 import { Link } from 'gatsby';
-import { useSiteMetadata } from '@/hooks/useSiteMetadata';
 import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import { Nav } from '../Nav';
-import { useSiteConfiguration } from '@/hooks/useSiteConfiguration';
+import { useAppStore } from '@/store/appStore';
 
 export const Header = () => {
-  const siteMetadata = useSiteMetadata();
-  const siteConfiguration = useSiteConfiguration();
+  const { siteMetadata, siteConfiguration } = useAppStore();
 
   return (
     <header className="w-full py-3 bg-background">

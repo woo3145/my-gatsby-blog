@@ -1,11 +1,28 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useEffect } from 'react';
 import { Header } from '../Header';
 import { MoonIcon, SunIcon } from '@radix-ui/react-icons';
 import { useDarkMode } from '@/hooks/useDarkMode';
 import { Button } from '../ui/button';
+import { useAppStore } from '@/store/appStore';
+import { useCategories } from '@/hooks/useCategories';
+import { useSiteMetadata } from '@/hooks/useSiteMetadata';
+import { useSiteConfiguration } from '@/hooks/useSiteConfiguration';
 
 export const MainLayout = ({ children }: { children: ReactNode }) => {
   const { isDarkMode, toggle } = useDarkMode();
+  const { setCategories, setSiteConfiguration, setSiteMetadata } =
+    useAppStore();
+
+  const categories = useCategories();
+  const siteMetadata = useSiteMetadata();
+  const siteConfiguration = useSiteConfiguration();
+
+  useEffect(() => {
+    setCategories(categories);
+    setSiteConfiguration(siteConfiguration);
+    setSiteMetadata(siteMetadata);
+  }, []);
+
   return (
     <div className="bg-background">
       <Header />

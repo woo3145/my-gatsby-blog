@@ -1,4 +1,4 @@
-const blogConfig = {
+module.exports = {
   siteUrl: '',
   // Used in manifest.json
   manifestSettings: {
@@ -16,5 +16,3 @@ const blogConfig = {
     path: '/posts', // Article List Page URL
   },
 };
-
-export default blogConfig;

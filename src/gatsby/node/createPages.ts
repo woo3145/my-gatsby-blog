@@ -1,11 +1,11 @@
 import { GatsbyNode } from 'gatsby';
 import * as path from 'path';
-import blogConfig from '../../../blog-config';
 import { ArticleData } from '@/templates/Article/type';
 
 // GraphQL 쿼리는 별도의 JavaScript 파일에서 가져옴
 // 이는 Gatsby가 build 시 TypeScript 파일에서 정적으로 GraphQL 쿼리를 추출하는데 어려움이 있기 때문
 const query = require('../../templates/Article/query');
+const blogConfig = require('../../../blog-config');
 
 const { blogSettings } = blogConfig;
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useLocation } from '@reach/router';
-import { useSiteMetadata } from '@/hooks/useSiteMetadata';
+import { useAppStore } from '@/store/appStore';
 
 interface SeoProps {
   title: string;
@@ -12,9 +12,10 @@ interface SeoProps {
 
 export function Seo(props: SeoProps): React.ReactElement {
   const location = useLocation();
-  const siteMetadata = { ...useSiteMetadata(), ...props };
+  const _siteMetadata = useAppStore((state) => state.siteMetadata);
+  const siteMetadata = { ..._siteMetadata, ...props };
 
-  const thumbnailUrl = siteMetadata.thumbnail
+  const thumbnailUrl = siteMetadata.thumbnail?.childImageSharp?.original
     ? (
         siteMetadata.siteUrl +
         siteMetadata.thumbnail.childImageSharp.original.src

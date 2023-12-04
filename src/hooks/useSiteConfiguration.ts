@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
-interface SiteConfiguration {
+export interface SiteConfiguration {
   featureToggles: {
     useDarkModeToggle: boolean;
   };
