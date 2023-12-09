@@ -24,7 +24,7 @@ export default function ArticleTemplate({
   const { frontmatter, fields } = article;
 
   return (
-    <article className="max-w-screen-md mx-auto py-8 px-4">
+    <article className="max-w-screen-md mx-auto pt-8 px-4 pb-20">
       <Seo
         title={article.frontmatter.title}
         description={article.frontmatter.description || undefined}
