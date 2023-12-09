@@ -6,6 +6,8 @@ import { Badge } from '@/components/ui/badge';
 import { ChevronLeftIcon } from '@radix-ui/react-icons';
 import { ArticleBody } from './ArticleBody';
 import { Seo } from '@/components/Seo';
+import { AuthorCard } from '@/components/AuthorCard';
+import { Separator } from '@/components/ui/separator';
 
 interface ArticleTemplateProps {
   pageContext: {
@@ -21,7 +23,7 @@ export default function ArticleTemplate({
   const { frontmatter, fields } = article;
 
   return (
-    <article className="max-w-screen-md mx-auto py-8">
+    <article className="max-w-screen-md mx-auto py-8 px-4">
       <Seo
         title={article.frontmatter.title}
         description={article.frontmatter.description || undefined}
@@ -51,6 +53,8 @@ export default function ArticleTemplate({
         {frontmatter.banner.caption}
       </p>
       <ArticleBody html={article.html} />
+      <Separator />
+      <AuthorCard />
     </article>
   );
 }
