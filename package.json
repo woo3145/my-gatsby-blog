@@ -4,6 +4,7 @@
   "license": "MIT",
   "description": "A simplified tech-blog starter for Gatsby",
   "author": "woo3145",
+  "main": "index.js",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
