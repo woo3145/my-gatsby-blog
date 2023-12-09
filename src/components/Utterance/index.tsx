@@ -10,14 +10,14 @@ const UtterancesContainer = () => {
 
   return (
     <>
-      <div className={isDarkMode ? '' : 'h-auto hidden'}>
+      <div className={isDarkMode ? '' : 'hidden'}>
         <Utterances
           repository={utterances.repo}
           type={utterances.type}
           theme="github-dark"
         />
       </div>
-      <div className={isDarkMode ? 'h-auto hidden' : ''}>
+      <div className={isDarkMode ? 'hidden' : ''}>
         <Utterances
           repository={utterances.repo}
           type={utterances.type}
