@@ -24,6 +24,13 @@
   margin: 2rem 0;
 }
 
+.blog_markdown h5 {
+  font-size: 1.875rem /* 30px */;
+  line-height: 3.75rem; /* 60px */
+  font-weight: 600;
+  margin: 2rem 0;
+}
+
 .blog_markdown p {
   font-size: 1.375rem /* 22px */;
   line-height: 2.75rem; /* 44px */
@@ -37,4 +44,66 @@
 
 .blog_markdown img {
   border-radius: 0.75rem;
+}
+
+.blog_markdown a {
+  text-decoration: underline;
+  color: hsl(var(--primary));
+}
+.blog_markdown a:hover {
+  text-decoration: underline;
+  color: hsl(var(--primary) / 0.7);
+}
+
+.blog_markdown blockquote {
+  background-color: hsl(var(--secondary));
+  color: hsl(var(--secondary-foreground) / 0.7);
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+  padding: 1.375rem;
+  border-left: 5px solid hsl(var(--primary));
+}
+.blog_markdown blockquote p {
+  font-size: 1.125rem; /* 18px */
+  padding: 0;
+  margin: 0;
+}
+
+.blog_markdown ul,
+.blog_markdown ol {
+  padding-left: 25px;
+}
+
+.blog_markdown > ul,
+.blog_markdown > ol {
+  margin-bottom: 2rem;
+}
+
+.blog_markdown ol {
+  list-style: decimal;
+}
+
+.blog_markdown ul {
+  list-style: disc;
+}
+
+.blog_markdown ul ul {
+  list-style: circle;
+}
+
+.blog_markdown ul ul ul {
+  list-style: square;
+}
+
+.blog_markdown li {
+  margin-bottom: 15px;
+  font-size: 1.375rem /* 22px */;
+  line-height: 2.75rem; /* 44px */
+  margin: 0;
+}
+
+.blog_markdown li p {
+  font-size: 1.375rem /* 22px */;
+  line-height: 2.75rem; /* 44px */
+  margin: 0;
 }
