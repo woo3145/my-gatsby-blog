@@ -8,6 +8,7 @@ import { ArticleBody } from './ArticleBody';
 import { Seo } from '@/components/Seo';
 import { AuthorCard } from '@/components/AuthorCard';
 import { Separator } from '@/components/ui/separator';
+import UtterancesContainer from '@/components/Utterance';
 
 interface ArticleTemplateProps {
   pageContext: {
@@ -55,6 +56,7 @@ export default function ArticleTemplate({
       <ArticleBody html={article.html} />
       <Separator />
       <AuthorCard />
+      <UtterancesContainer />
     </article>
   );
 }

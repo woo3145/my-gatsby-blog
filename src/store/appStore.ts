@@ -6,11 +6,13 @@ type AppState = {
   categories: string[];
   siteConfiguration: SiteConfiguration;
   siteMetadata: SiteMetadata;
+  isDarkMode: boolean;
 };
 type AppAction = {
   setCategories: (categories: AppState['categories']) => void;
   setSiteConfiguration: (siteConfiguration: SiteConfiguration) => void;
   setSiteMetadata: (siteMetadata: SiteMetadata) => void;
+  setIsDarkMode: (darkMode: boolean) => void;
 };
 
 const defaultConfig: SiteConfiguration = {
@@ -22,6 +24,10 @@ const defaultConfig: SiteConfiguration = {
   },
   navigation: {
     header: [{ label: '', url: '/' }],
+  },
+  utterances: {
+    repo: '',
+    type: '',
   },
 };
 const defaultMetadata: SiteMetadata = {
@@ -44,9 +50,11 @@ export const useAppStore = create<AppState & AppAction>((set) => ({
   categories: [],
   siteConfiguration: defaultConfig,
   siteMetadata: defaultMetadata,
+  isDarkMode: false,
   setCategories: (categories) => set(() => ({ categories: categories })),
   setSiteConfiguration: (siteConfiguration) =>
     set(() => ({ siteConfiguration: siteConfiguration })),
   setSiteMetadata: (siteMetadata) =>
     set(() => ({ siteMetadata: siteMetadata })),
+  setIsDarkMode: (darkMode) => set(() => ({ isDarkMode: darkMode })),
 }));
