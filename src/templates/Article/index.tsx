@@ -8,6 +8,7 @@ import { ArticleBody } from './ArticleBody';
 import { Seo } from '@/components/Seo';
 import { AuthorCard } from '@/components/AuthorCard';
 import { Separator } from '@/components/ui/separator';
+import UtterancesContainer from '@/components/Utterance';
 
 interface ArticleTemplateProps {
   pageContext: {
@@ -23,7 +24,7 @@ export default function ArticleTemplate({
   const { frontmatter, fields } = article;
 
   return (
-    <article className="max-w-screen-md mx-auto py-8 px-4">
+    <article className="max-w-screen-md mx-auto pt-8 px-4 pb-20">
       <Seo
         title={article.frontmatter.title}
         description={article.frontmatter.description || undefined}
@@ -55,6 +56,7 @@ export default function ArticleTemplate({
       <ArticleBody html={article.html} />
       <Separator />
       <AuthorCard />
+      <UtterancesContainer />
     </article>
   );
 }

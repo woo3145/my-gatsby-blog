@@ -9,7 +9,7 @@ import { useSiteMetadata } from '@/hooks/useSiteMetadata';
 import { useSiteConfiguration } from '@/hooks/useSiteConfiguration';
 
 export const MainLayout = ({ children }: { children: ReactNode }) => {
-  const { isDarkMode, toggle } = useDarkMode();
+  const { isDarkMode, setIsDarkMode, toggle } = useDarkMode();
   const { setCategories, setSiteConfiguration, setSiteMetadata } =
     useAppStore();
 
@@ -21,6 +21,15 @@ export const MainLayout = ({ children }: { children: ReactNode }) => {
     setCategories(categories);
     setSiteConfiguration(siteConfiguration);
     setSiteMetadata(siteMetadata);
+  }, []);
+
+  useEffect(() => {
+    const savedTheme = window.localStorage.getItem('darkMode');
+    if (savedTheme === 'darkTheme') {
+      setIsDarkMode(true);
+    } else {
+      setIsDarkMode(false);
+    }
   }, []);
 
   return (

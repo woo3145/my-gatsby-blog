@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useAppStore } from '@/store/appStore';
+import { useEffect } from 'react';
 
 export const useDarkMode = () => {
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    const savedTheme = window.localStorage.getItem('darkMode');
-    return savedTheme === 'darkTheme' ? true : false;
-  });
+  const [isDarkMode, setIsDarkMode] = useAppStore((state) => [
+    state.isDarkMode,
+    state.setIsDarkMode,
+  ]);
 
   useEffect(() => {
     const body = document.getElementsByTagName('body')[0];
@@ -19,8 +20,8 @@ export const useDarkMode = () => {
   }, [isDarkMode]);
 
   const toggle = () => {
-    setIsDarkMode((prev) => !prev);
+    setIsDarkMode(!isDarkMode);
   };
 
-  return { isDarkMode, toggle };
+  return { isDarkMode, toggle, setIsDarkMode };
 };

@@ -25,6 +25,10 @@
     },
     "featureToggles": {
       "useDarkModeToggle": true
+    },
+    "utterances": {
+      "repo": "github_username/repository",
+      "type": "pathname"
     }
   }
 }
