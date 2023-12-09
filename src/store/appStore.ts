@@ -23,6 +23,10 @@ const defaultConfig: SiteConfiguration = {
   navigation: {
     header: [{ label: '', url: '/' }],
   },
+  utterances: {
+    repo: '',
+    type: '',
+  },
 };
 const defaultMetadata: SiteMetadata = {
   language: '',

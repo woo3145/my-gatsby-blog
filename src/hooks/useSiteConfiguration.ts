@@ -13,6 +13,10 @@ export interface SiteConfiguration {
       url: string;
     }[];
   };
+  utterances: {
+    repo: string;
+    type: string;
+  };
 }
 
 export const useSiteConfiguration = () => {
@@ -38,6 +42,10 @@ export const siteConfigurationQuery = graphql`
               label
               url
             }
+          }
+          utterances {
+            repo
+            type
           }
         }
       }
