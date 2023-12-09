@@ -5,7 +5,7 @@ date: '2023-11-29'
 banner:
   src: '../../images/thumbnails/4_thumbnail.png'
   alt: 'First Markdown Post'
-  caption: 'caption'
+  caption: 'DALL·E 3'
 categories:
   - 'Setup'
   - 'Tutorial'
