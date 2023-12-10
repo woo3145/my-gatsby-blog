@@ -23,7 +23,7 @@ const config: GatsbyConfig = {
         },
       },
     },
-    // 'gatsby-plugin-sitemap', // activate if your site is deployed
+    'gatsby-plugin-sitemap', // activate if your site is deployed
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
