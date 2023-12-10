@@ -3,7 +3,7 @@ title: '관계형 DB 모델링과 설계 흐름'
 description: ''
 date: '2023-12-08'
 banner:
-  src: '../../images/thumbnails/2_thumbnail.png'
+  src: '../../images/thumbnails/1_thumbnail.png'
   alt: 'db_modeling_thumbnail'
   caption: 'DALL·E 3'
 categories:
