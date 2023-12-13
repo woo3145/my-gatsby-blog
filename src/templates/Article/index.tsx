@@ -53,7 +53,7 @@ export default function ArticleTemplate({
       <p className="text-accent-foreground/50 text-right">
         {frontmatter.banner.caption}
       </p>
-      <ArticleBody html={article.html} />
+      <ArticleBody article={article} />
       <Separator />
       <AuthorCard />
       <UtterancesContainer />
