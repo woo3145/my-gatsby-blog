@@ -29,8 +29,9 @@ export const TableOfContents = ({ tableOfContents }: Props) => {
 
         // 가장 최근에 화면에 진입한 헤딩의 목차 항목을 활성화
         if (lastEnteredHeadingId) {
+          const encodedId = encodeURIComponent(lastEnteredHeadingId);
           const activeElement = tocRef.current.querySelector(
-            `a[href="#${lastEnteredHeadingId}"]`
+            `a[href="#${encodedId}"]`
           );
           if (activeElement) {
             activeElement.classList.add('active');
