@@ -107,3 +107,41 @@
   line-height: 2.75rem; /* 44px */
   margin: 0;
 }
+
+.blog_markdown .table-of-contents {
+  display: none;
+  position: fixed;
+  top: 18rem;
+  right: 2rem;
+  width: 18rem;
+}
+
+.blog_markdown .table-of-contents ul,
+ol {
+  line-height: auto;
+  list-style: none;
+}
+
+.blog_markdown .table-of-contents li {
+  line-height: normal;
+}
+.blog_markdown .table-of-contents p {
+  line-height: 2rem; /* 32px */
+}
+
+.blog_markdown .table-of-contents a {
+  text-decoration: none;
+  font-size: 1.25rem; /* 20px */
+  line-height: 2.375rem; /* 38px */
+  font-weight: 400;
+  color: hsl(var(--foreground));
+}
+.blog_markdown .table-of-contents a.active {
+  color: hsl(var(--primary));
+}
+
+@media screen and (min-width: 1440px) {
+  .blog_markdown .table-of-contents {
+    display: block;
+  }
+}

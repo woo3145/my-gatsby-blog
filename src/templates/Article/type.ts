@@ -5,6 +5,7 @@ const query = require('./query.js');
 export interface ArticleData {
   id: string;
   html: string;
+  tableOfContents: string;
   fields: {
     slug: string;
     readingTime: {
