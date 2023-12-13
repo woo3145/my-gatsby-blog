@@ -27,7 +27,7 @@ export const ArticleSection = () => {
           {categories.map((category) => {
             return (
               <Link
-                to={`${blogConfig.blogSettings.path}?$filter=${category}`}
+                to={`${blogConfig.blogSettings.path}?filter=${category}`}
                 key={category}
               >
                 <Badge variant="outline">#{category}</Badge>

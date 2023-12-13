@@ -1,7 +1,7 @@
 module.exports = {
   ArticleQuery: `
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
       nodes {
         fields {
           slug
