@@ -9,6 +9,7 @@ banner:
 categories:
   - 'Setup'
   - 'Tutorial'
+  - 'Node'
 keywords:
   - 'Example'
   - 'Gatsby'
