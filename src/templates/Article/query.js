@@ -2,7 +2,7 @@ module.exports = {
   ArticleQuery: `
   query {
     allMarkdownRemark {
-      nodes {
+      nodes(sort: {frontmatter: {date: DESC}}) {
         fields {
           slug
           readingTime {
