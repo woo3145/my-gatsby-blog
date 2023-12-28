@@ -105,3 +105,10 @@ dd
 
 > 인용문
 > ㅇㄹㅇㄹㅁㄴㅇㄹ
+
+## 수식
+
+$$
+a^p\equiv a (\bmod\ p) \qquad\qquad\qquad \\
+a^{p-1}\equiv 1 (\bmod\ p) \quad \text{if } a\%p \neq 0
+$$
