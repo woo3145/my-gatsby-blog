@@ -1,5 +1,5 @@
 ---
-title: '밀러-라빈 소수 판별법[c++]'
+title: '밀러-라빈 소수 판별법 알고리즘[c++]'
 description: ''
 date: '2023-12-29'
 banner:
