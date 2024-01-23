@@ -1,9 +1,9 @@
 ---
 title: '타입스크립트없이 CRA에 shadcn 라이브러리 세팅하기'
 description: ''
-date: '2023-01-23'
+date: '2024-01-23'
 banner:
-  src: '../../images/thumbnails/7_thumbnail.png'
+  src: '../../images/thumbnails/3_thumbnail.png'
   alt: 'algorithm_thumbnail'
   caption: 'DALL·E 3'
 categories:
